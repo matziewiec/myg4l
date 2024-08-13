@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    reactStrictMode: true,
+    images: {
+      domains: [process.env.WP_IMAGES_URL || 'localhost'],
+    },
+};
 
 export default nextConfig;
